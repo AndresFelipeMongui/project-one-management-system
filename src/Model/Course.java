@@ -5,26 +5,30 @@ import java.util.List;
 
 public class Course {
     
-    private String code;
+    private int code;
     private String name;
     private int credits;
+    private int slot;
+    private int codeTeacher;
     private List<Student> students;
     
     public Course() {
     }
 
-    public Course(String code, String name, int credits) {
+    public Course(int code, String name, int credits, int slot, int codeTeacher) {
         this.code = code;
         this.name = name;
         this.credits = credits;
+        this.slot=slot;
+        this.codeTeacher=codeTeacher;
         this.students = new ArrayList<>();
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 
@@ -59,6 +63,25 @@ public String toString(){
     ", " + code +
     ", " + credits;
 }
+
+public int getSlot() {
+    return slot;
+}
+
+public void setSlot(int slot) {
+    this.slot = slot;
+
+}
+
+public int getCodeTeacher() {
+    return codeTeacher;
+}
+
+public void setCodeTeacher(int codeTeacher) {
+    this.codeTeacher = codeTeacher;
+}
+
+
 
     
 }

@@ -5,24 +5,24 @@ import java.util.List;
 
 public class Teacher {
 
-    private String id;
+    private int id;
     private String firstName;
     private String lastName;
     private String email;
     private List<Course> courses;
     public Teacher() {
     }
-    public Teacher(String id, String firstName, String lastName, String email) {
+    public Teacher(int id, String firstName, String lastName, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.courses = new ArrayList<>();
     }
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
     public String getFirstName() {
